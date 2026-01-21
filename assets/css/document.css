@@ -1,0 +1,253 @@
+:root {
+  --primary-color: #0E7E82;
+  --text-color: #333333;
+  --bg-color: #ffffff;
+  --border-color: #e0e0e0;
+  --hover-bg: #f5f5f5;
+  --toolbar-height: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 0;
+  margin: 0;
+  padding-top: var(--toolbar-height);
+}
+
+/* Fixed Toolbar */
+.document-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--toolbar-height);
+  background: white;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* PDF Download Button */
+.pdf-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(14, 126, 130, 0.2);
+}
+
+.pdf-download:hover {
+  background: #0a6266;
+  box-shadow: 0 4px 8px rgba(14, 126, 130, 0.3);
+  transform: translateY(-1px);
+}
+
+.pdf-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Language Selector */
+.language-selector {
+  position: relative;
+}
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.language-button:hover {
+  background: var(--hover-bg);
+}
+
+.language-flag {
+  font-size: 1.2rem;
+}
+
+.language-arrow {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  transition: transform 0.2s;
+}
+
+.language-dropdown.open .language-arrow {
+  transform: rotate(180deg);
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.language-dropdown.open .language-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: background 0.2s;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.language-option:last-child {
+  border-bottom: none;
+}
+
+.language-option:hover {
+  background: var(--hover-bg);
+}
+
+.language-option.active {
+  background: #f0f9fa;
+  font-weight: 500;
+}
+
+/* Document Container */
+.document-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Document Content - Preserve Google Docs styling */
+.document-content {
+  background: white;
+}
+
+/* Override some Google Docs styles for better readability */
+.document-content body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.document-content ol,
+.document-content ul {
+  padding-left: 2em;
+}
+
+.document-content h1,
+.document-content h2,
+.document-content h3,
+.document-content h4,
+.document-content h5,
+.document-content h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: var(--text-color);
+}
+
+.document-content p {
+  margin-bottom: 1em;
+}
+
+.document-content table {
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.document-content a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.document-content a:hover {
+  color: #0a6266;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .toolbar-content {
+    padding: 0 1rem;
+  }
+
+  .document-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .language-button {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .pdf-download {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    padding-top: 0;
+  }
+
+  .document-toolbar {
+    display: none;
+  }
+
+  .document-container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
