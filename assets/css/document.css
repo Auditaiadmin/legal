@@ -182,6 +182,7 @@ body {
 .document-content body {
   padding: 0 !important;
   margin: 0 !important;
+  /*margin: 0 auto !important;*/
 }
 
 /* Fix line-height to match Google Docs readable spacing */
