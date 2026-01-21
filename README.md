@@ -62,3 +62,4 @@ The site is automatically deployed to GitHub Pages when changes are pushed to th
 Copyright © 2026 AuditAI. All rights reserved.
 
 Last updated: December 16, 2025
+
