@@ -120,6 +120,7 @@ def generate_page(doc, lang):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{doc['title']} - AuditAI Legal Documents">
+    <meta name="robots" content="noindex, nofollow">
     <title>{doc['icon']} {doc['title']} - AuditAI</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
@@ -156,9 +157,6 @@ def generate_page(doc, lang):
             <div class="document-viewer">
                 <div class="document-header">
                     <div class="document-title">
-                        <div class="breadcrumb">
-                            <a href="index.html">← Back to all documents</a>
-                        </div>
                         <h2>{doc['title']}</h2>
                         <div class="document-meta">
                             <span><strong>Version:</strong> {doc['version']}</span> |
@@ -187,7 +185,6 @@ def generate_page(doc, lang):
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 AuditAI. All rights reserved.</p>
-            <p><a href="index.html">Back to all documents</a></p>
         </div>
     </footer>
 </body>
