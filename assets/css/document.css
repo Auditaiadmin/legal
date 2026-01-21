@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
 :root {
   --primary-color: #0E7E82;
   --text-color: #333333;
@@ -7,19 +9,18 @@
   --toolbar-height: 60px;
 }
 
-* {
+/* Only reset specific elements, not everything */
+html, body {
   margin: 0;
   padding: 0;
+}
+
+* {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
   background-color: var(--bg-color);
-  padding: 0;
-  margin: 0;
   padding-top: var(--toolbar-height);
 }
 
@@ -96,6 +97,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s;
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
 }
 
 .language-button:hover {
@@ -148,6 +150,7 @@ body {
   color: var(--text-color);
   transition: background 0.2s;
   border-bottom: 1px solid var(--border-color);
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
 }
 
 .language-option:last-child {
@@ -170,42 +173,54 @@ body {
   padding: 2rem 1.5rem;
 }
 
-/* Document Content - Preserve Google Docs styling */
+/* Document Content - Preserve ALL Google Docs styling */
 .document-content {
   background: white;
 }
 
-/* Override some Google Docs styles for better readability */
+/* Only override what's absolutely necessary */
 .document-content body {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.document-content ol,
-.document-content ul {
-  padding-left: 2em;
-}
-
-.document-content h1,
-.document-content h2,
-.document-content h3,
-.document-content h4,
-.document-content h5,
-.document-content h6 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  color: var(--text-color);
-}
-
+/* Fix line-height to match Google Docs readable spacing */
 .document-content p {
-  margin-bottom: 1em;
+  line-height: 1.4 !important;
 }
 
+.document-content li {
+  line-height: 1.8 !important;
+}
+
+.document-content li {
+  padding-top: 2pt !important;
+  padding-bottom: 2pt !important;
+}
+
+/* Standardize heading colors only */
+.document-content h1 *,
+.document-content h2 *,
+.document-content h3 *,
+.document-content h4 *,
+.document-content h5 *,
+.document-content h6 * {
+  color: #0e7e82 !important;
+}
+
+/* Fix table width */
 .document-content table {
-  border-collapse: collapse;
-  margin: 1em 0;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
+.document-content td,
+.document-content th {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Links */
 .document-content a {
   color: var(--primary-color);
   text-decoration: underline;
