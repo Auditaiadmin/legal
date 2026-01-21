@@ -18,7 +18,7 @@ All documents are available in three languages:
 
 ## 🌐 Published Website
 
-The documents are published at: **https://auditaiadmin.github.io/legal/**
+The documents are published at: **https://legal.audit-ai.com/**
 
 Each document is accessible only via its direct URL (no public index page).
 
@@ -208,7 +208,7 @@ A "commit" is like saving a checkpoint of your work with a description of what y
 2. You'll see a yellow dot 🟡 next to your commit (this means it's building)
 3. Wait 1-2 minutes
 4. The yellow dot will turn into a green checkmark ✅ when it's done
-5. Your changes are now live at https://auditaiadmin.github.io/legal/
+5. Your changes are now live at https://legal.audit-ai.com/
 
 **If you see a red X ❌:**
 - Something went wrong
@@ -292,34 +292,34 @@ legal/
 Each document is accessible only via direct URL:
 
 **Privacy Policy:**
-- 🇬🇧 https://auditaiadmin.github.io/legal/privacy-policy-en.html
-- 🇪🇸 https://auditaiadmin.github.io/legal/privacy-policy-es.html
-- 🇮🇹 https://auditaiadmin.github.io/legal/privacy-policy-it.html
+- 🇬🇧 https://legal.audit-ai.com/privacy-policy-en.html
+- 🇪🇸 https://legal.audit-ai.com/privacy-policy-es.html
+- 🇮🇹 https://legal.audit-ai.com/privacy-policy-it.html
 
 **Cookies Policy:**
-- 🇬🇧 https://auditaiadmin.github.io/legal/cookies-policy-en.html
-- 🇪🇸 https://auditaiadmin.github.io/legal/cookies-policy-es.html
-- 🇮🇹 https://auditaiadmin.github.io/legal/cookies-policy-it.html
+- 🇬🇧 https://legal.audit-ai.com/cookies-policy-en.html
+- 🇪🇸 https://legal.audit-ai.com/cookies-policy-es.html
+- 🇮🇹 https://legal.audit-ai.com/cookies-policy-it.html
 
 **Contracting and Purchase Process:**
-- 🇬🇧 https://auditaiadmin.github.io/legal/contracting-purchase-en.html
-- 🇪🇸 https://auditaiadmin.github.io/legal/contracting-purchase-es.html
-- 🇮🇹 https://auditaiadmin.github.io/legal/contracting-purchase-it.html
+- 🇬🇧 https://legal.audit-ai.com/contracting-purchase-en.html
+- 🇪🇸 https://legal.audit-ai.com/contracting-purchase-es.html
+- 🇮🇹 https://legal.audit-ai.com/contracting-purchase-it.html
 
 **Subscription and Refund Policy:**
-- 🇬🇧 https://auditaiadmin.github.io/legal/subscription-refund-en.html
-- 🇪🇸 https://auditaiadmin.github.io/legal/subscription-refund-es.html
-- 🇮🇹 https://auditaiadmin.github.io/legal/subscription-refund-it.html
+- 🇬🇧 https://legal.audit-ai.com/subscription-refund-en.html
+- 🇪🇸 https://legal.audit-ai.com/subscription-refund-es.html
+- 🇮🇹 https://legal.audit-ai.com/subscription-refund-it.html
 
 **Licence Agreement:**
-- 🇬🇧 https://auditaiadmin.github.io/legal/licence-agreement-en.html
-- 🇪🇸 https://auditaiadmin.github.io/legal/licence-agreement-es.html
-- 🇮🇹 https://auditaiadmin.github.io/legal/licence-agreement-it.html
+- 🇬🇧 https://legal.audit-ai.com/licence-agreement-en.html
+- 🇪🇸 https://legal.audit-ai.com/licence-agreement-es.html
+- 🇮🇹 https://legal.audit-ai.com/licence-agreement-it.html
 
 **Terms of Use:**
-- 🇬🇧 https://auditaiadmin.github.io/legal/terms-of-use-en.html
-- 🇪🇸 https://auditaiadmin.github.io/legal/terms-of-use-es.html
-- 🇮🇹 https://auditaiadmin.github.io/legal/terms-of-use-it.html
+- 🇬🇧 https://legal.audit-ai.com/terms-of-use-en.html
+- 🇪🇸 https://legal.audit-ai.com/terms-of-use-es.html
+- 🇮🇹 https://legal.audit-ai.com/terms-of-use-it.html
 
 ---
 
@@ -342,7 +342,7 @@ Each document is accessible only via direct URL:
 
 **How do I publish?** → Commit in GitHub Desktop, then click "Push origin"
 
-**Where is the website?** → https://auditaiadmin.github.io/legal/
+**Where is the website?** → https://legal.audit-ai.com/
 
 **How long until changes appear?** → 1-2 minutes after pushing
 
