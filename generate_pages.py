@@ -67,6 +67,16 @@ documents = [
             "es": {"name": "Español", "flag": "🇪🇸"},
             "it": {"name": "Italiano", "flag": "🇮🇹"}
         }
+    },
+    {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "version": "FAQ-01/2026-V1",
+        "languages": {
+            "en": {"name": "English", "flag": "🇬🇧"},
+            "es": {"name": "Español", "flag": "🇪🇸"},
+            "it": {"name": "Italiano", "flag": "🇮🇹"}
+        }
     }
 ]
 
