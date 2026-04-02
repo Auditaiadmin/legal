@@ -10,6 +10,7 @@ Official legal documentation repository for AuditAI platform.
 - **Subscription and Refund Policy** (SRP-01/2026-V1)
 - **Licence Agreement** (LIC-01/2026-V1)
 - **Terms of Use** (TCC-01/2026-V1)
+- **FAQs**
 
 All documents are available in three languages:
 - 🇬🇧 English
@@ -77,6 +78,11 @@ Each document is accessible via direct URL:
 - English: `https://auditaiadmin.github.io/legal/terms-of-use-en.html`
 - Español: `https://auditaiadmin.github.io/legal/terms-of-use-es.html`
 - Italiano: `https://auditaiadmin.github.io/legal/terms-of-use-it.html`
+
+**FAQs:**
+- English: `https://auditaiadmin.github.io/legal/faq-en.html`
+- Español: `https://auditaiadmin.github.io/legal/faq-es.html`
+- Italiano: `https://auditaiadmin.github.io/legal/faq-it.html`
 
 ## 📁 Repository Structure
 
